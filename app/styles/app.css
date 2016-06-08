@@ -61,7 +61,9 @@
   width: 100%;
 }
 
-.cell {
+
+
+.row div {
   border: solid #999 1px;
   margin:0px;
   flex: 1 1 auto;
@@ -69,10 +71,18 @@
 }
 
 .cell.alive {
+  border: solid #999 1px;
+  margin:0px;
+  flex: 1 1 auto;
+  display: inline-block;
   background-color: #2A2;
 }
 
 .cell.dead {
+  border: solid #999 1px;
+  margin:0px;
+  flex: 1 1 auto;
+  display: inline-block;
   background-color: #CCC;
 }
 
