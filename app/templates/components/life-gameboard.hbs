@@ -1,0 +1,13 @@
+<div class=board>
+  {{#each board as |row| }}
+    <div class="row">
+      {{#each row as |cell|}}
+        <div {{action "toggleLiving" cell}} class={{cell.status}}></div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
+
+<button {{action "iterateBoard"}}>Step</button>
+
+{{yield}}

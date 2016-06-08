@@ -1,0 +1,17 @@
+<div class="controls">
+  <div class="timing">
+    <h3>Progress</h3>
+    <label>number of steps: {{input value=steps}} </label>
+    <label>milliseconds/step: {{input value=delay}} </label>
+  </div>
+  <div class="new-board">
+    <h3>New Board</h3>
+    <button {{action "blank_board"}} >default/blank</button>
+    <button {{action "create_board"}}>custom/random</button>
+    <label>rows: {{input value=rows}} </label>
+    <label>columnns: {{input value=columns}} </label>
+    <label>density: {{input value=density}} </label>
+  </div>
+</div>
+
+{{yield}}

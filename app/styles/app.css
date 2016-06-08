@@ -1,0 +1,81 @@
+.body {
+  background-color: #333;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 925px;
+  margin-left: 75px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100px
+}
+
+.controls input {
+  width: 3em;
+}
+
+.controls button {
+  width: 100%;
+}
+
+.controls button + button {
+  margin-top: 10px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls .timing {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls .new-board{
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 600px;
+  width: 600px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.cell {
+  border: solid #999 1px;
+  margin:0px;
+  flex: 1 1 auto;
+  display: inline-block;
+}
+
+.cell.alive {
+  background-color: #2A2;
+}
+
+.cell.dead {
+  background-color: #CCC;
+}
+
+.about {
+  flex: 0 1 100px;
+}
